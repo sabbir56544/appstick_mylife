@@ -8,7 +8,7 @@ import Trip from '../Trip/Trip';
 
 const Home = () => {
 	return (
-		<Fragment>
+		<>
 			<section className="banner-area bg-area">
 				<div className="container">
 					<div className="row popular">
@@ -29,7 +29,7 @@ const Home = () => {
 			<GetTouch />
 			<Trip />
 			<Bank />
-		</Fragment>
+		</>
 	)
 }
 
