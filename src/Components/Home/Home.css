@@ -1,0 +1,627 @@
+:root {
+    --white: #ffffff;
+    --black: #404040;
+    --black-2: #303134;
+    --black-6: #666666;
+    --green: #19A526;
+    --orange: #FF8500;
+    --shadow: #03c80358;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========= common css start =========== */
+
+
+/* ======= header section start =========  */
+
+.header-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--white);
+    box-shadow: 0 0 2px #00000012;
+    z-index: 10000000;
+}
+
+.header-area .logo {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.header-area .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-area .lg-navber {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-area .lg-navber ul {
+    display: flex;
+    justify-content: start;
+}
+
+.header-area .lg-navber ul li a {
+    color: #006838;
+    font-size: 18px;
+	font-family: 'Poppins';
+    line-height: 70px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: all linear .2s;
+	font-weight: bold;
+}
+
+.header-area .lg-navber ul li a:hover {
+    color: #FF8500;
+}
+
+.header-area .header-search {
+    text-align: end;
+    line-height: 75px;
+}
+
+.header-area .header-search a {
+    font-size: 24px;
+    line-height: 60px;
+    color: var(--green);
+}
+
+
+
+/* header end  */
+
+
+/* mb header start  */
+
+.side-menu-area {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--green);
+    box-shadow: 0 2px 2px var(--shadow);
+    z-index: 100;
+}
+
+.side-menu-area .navber ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    text-align: center;
+}
+
+.side-menu-area .navber ul li a {
+    color: var(--white);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.side-menu-area .navber ul li {
+    transition: all linear .2s;
+}
+
+.side-menu-area .navber ul li:hover {
+    background-color: var(--orange);
+}
+
+header .navber ul li:focus-within>ul,
+header .navber ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: var(--green);
+    cursor: pointer;
+    display: none;
+}
+
+.mb-header-tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mb-header-tab label {
+    margin-bottom: 0px;
+}
+
+.mb-header-tab i {
+    color: var(--green);
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.mb-header-tab .mb-header-logo {
+    width: 200px;
+    height: 40px;
+    margin-top: 6px;
+}
+
+.mb-header-tab .mb-header-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.mb-header-tab .header-search {
+    text-align: end;
+}
+
+.mb-header-tab .header-search a {
+    font-size: 24px;
+    line-height: 60px;
+    color: var(--green);
+}
+
+
+/* mb header end  */
+
+
+/* ========= header section end =========== */
+
+
+/*  ======== banner section start ========== */
+
+.banner-area {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.banner-area .popular {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-area .popular .banner-card {
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 0 4px 4px #00000012;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.banner-area .popular .banner-card .banner-img {
+    width: 100%;
+    height: 200px;
+}
+
+.banner-area .popular .banner-card .banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-area .popular .banner-card .banner-content {
+    padding: 20px;
+}
+
+.banner-area .popular .banner-card .banner-content h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 2px;
+    color: var(--orange);
+    margin-bottom: 15px;
+    text-align: left;
+    letter-spacing: 4px;
+}
+
+.banner-area .popular .banner-card .banner-content .banner-icon i {
+    font-size: 30px;
+    color: var(--green);
+    margin-top: 10px;
+}
+
+.banner-area .popular .banner-card .banner-content .banner-info{
+    margin-left: 15px;
+}
+
+.banner-area .popular .banner-card .banner-content .banner-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--green);
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.banner-area .popular .banner-card .banner-content .banner-info h6{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--black-6);
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+
+
+/*  ======== banner section end ============== */
+
+
+/*  ========== our-savings section start ====== */
+
+.our-savings-area {
+    margin: 50px;
+}
+
+.our-savings-area .our-savings {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.our-savings-area .our-savings-header h1 {
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    line-height: 22.5px;
+}
+
+.our-savings-area .our-savings-card {
+    background-color: var(--white);
+    box-shadow: 0 0 2px 2px #00000012;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 30px;
+}
+
+.our-savings-area .our-savings-card .savings-content-icon {
+    display: flex;
+    margin: 10px 0;
+}
+
+.our-savings-area .our-savings-card .savings-content-icon i {
+    font-size: 25px;
+    margin-right: 0 5px;
+}
+
+.our-savings-area .our-savings-card .savings-content-icon h2 {
+    color: var(--orange);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px 5px;
+}
+
+.our-savings-area .our-savings-card ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-savings-area .our-savings-card ul li p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-2);
+    margin-bottom: 5px;
+}
+
+.our-savings-area .our-savings-card ul li span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.our-savings-area .our-savings-card .our-savings-btn {
+    border-radius: 50px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    padding: 8px 27px;
+}
+
+.our-savings-area .our-savings-card .our-savings-btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+.our-savings-area .our-savings-card a .our-savings-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--green);
+    margin: 10px 0;
+    padding: 8px 27px;
+    transition: all linear .2s;
+}
+
+.our-savings-area .our-savings-card a .our-savings-btn:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+
+/*  ========== our-savings section end ======== */
+
+
+/*  ============ get section start =========== */
+
+.get-area {
+    height: 350px;
+    background-color: var(--green);
+    margin-bottom: 40px;
+}
+
+.get-area .get-content {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.get-area .get-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.get-area .get-content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.get-area .search {
+    position: relative;
+    height: 49px;
+    width: 439px;
+    margin: 0 auto;
+    box-shadow: 0 0 2px 2px #00000012;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.get-area .search input {
+    width: 100%;
+    height: 49px;
+    color: var(--black-2);
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+.get-area .search input::placeholder {
+    color: var(--black-6);
+    font-size: 16px;
+}
+
+.get-area .search a {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+/*  =============== get section end ============= */
+
+
+/*  ========= inspiration section start ========= */
+
+.inspiration-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.inspiration-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--black-2);
+}
+
+.inspiration-header span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-6);
+}
+
+.inspiration-area .inspiration {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inspiration-area .inspiration-card {
+    box-shadow: 0 0 4px 3px #00000012;
+    border-radius: 4px;
+}
+
+.inspiration-area .inspiration-card .inspiration-img {
+    width: 100%;
+}
+
+.inspiration-area .inspiration-card .inspiration-img img {
+    width: 100%;
+}
+
+.inspiration-area .inspiration-card .inspiration-content {
+    padding: 30px 20px;
+}
+
+.inspiration-area .inspiration-card .inspiration-content h2 {
+    color: var(--green);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+}
+
+.inspiration-area .inspiration-card .inspiration-content h6 {
+    color: var(--black-6);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/*  =============== inspiration section end ====== */
+
+
+/*  ======= remunerative section start =========== */
+
+.remunerative-area {
+    background-color: #FFF4E7;
+    margin-top: 40px;
+    text-align: center;
+    padding: 70px 0;
+    height: 370px;
+}
+
+.remunerative-area .remunerative {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.remunerative-area .remunerative .remunerative-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.remunerative-area .remunerative .remunerative-header h2 span {
+    color: var(--orange);
+    padding-left: 8px;
+}
+
+.remunerative-area .remunerative .remunerative-content ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.remunerative-area .remunerative .remunerative-content ul li {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.remunerative-area .remunerative .remunerative-content ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/*  ========== remunerative section end ========= */
+
+
+/*  ============ footer section end ============= */
+
+.footer-area {
+    padding: 50px;
+    background-color: var(--black);
+}
+
+.footer-area .about-company h3 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-area .about-company span {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--green);
+}
+
+.footer-area .about-company p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.footer-area .about-company a .fotter-btn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: all linear .2s;
+}
+
+.footer-area .about-company a .fotter-btn:hover {
+    background-color: var(--green);
+}
+
+.footer-area .footer-links h4 {
+    color: #909090;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 18px;
+    /* underline */
+    position: relative;
+
+}
+
+.footer-area .footer-links ul li a {
+    color: var(--white);
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all linear .2s;
+}
+
+.footer-area .footer-links ul li a:hover {
+    color: var(--orange);
+}
+
+.footer-area .footer-bottom .footer-icon a {
+    color: var(--white);
+    font-size: 15px;
+    margin-right: 25px;
+}
+
+.footer-area .footer-bottom .footer-icon a i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: var(--green);
+    transition: all linear .2s;
+}
+
+.footer-area .footer-bottom .footer-icon a i:hover {
+    color: var(--green);
+    background-color: var(--white);
+}
+
+.footer-area .footer-bottom .footer-logo {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*  =============== footer section end ============= */

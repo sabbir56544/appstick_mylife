@@ -1,0 +1,417 @@
+/* ============= container start =============*/
+
+@media only screen and (max-width: 1440px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 360px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 330px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 300px;
+    }
+}
+
+
+/* ================ container end =============  */
+
+
+/* =========header responsive start ============ */
+
+
+/* header start  */
+
+@media only screen and (max-width: 768px) {
+    .header-area {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .side-menu-area .navber ul {
+        display: none;
+    }
+}
+
+
+/* mb-top start  */
+
+@media (max-width: 2560px) {
+    .mb-header-tab-area {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .mb-header-tab-area {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mb-header-tab-area {
+        display: initial;
+    }
+    .header-top-area {
+        display: none;
+    }
+    .mb-header-tab-area {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 70px;
+        background-color: var(--white);
+        align-items: center;
+        z-index: 9999;
+    }
+}
+
+@media (max-width: 768px) {
+    .mb-header-tab-area {
+        height: 55px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .mb-header-tab-area {
+        height: 50px;
+    }
+    .mb-header-tab i {
+        line-height: 63px;
+    }
+    .mb-header-tab .mb-header-logo {
+        width: 143px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .mb-header-tab .mb-header-btn button {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mb-header-tab-area {
+        height: 45px;
+    }
+    .mb-header-tab .mb-header-logo {
+        width: 100px;
+        height: 30px;
+        margin-top: 17px;
+    }
+    .mb-header-tab .mb-header-btn button {
+        margin-top: 15px;
+        padding: 5px 13px;
+        font-size: 11px;
+    }
+}
+
+
+/* mb to end  */
+
+
+/* side-menu */
+
+@media only screen and (max-width: 768px) {
+    .side-menu-area {
+        top: 55px;
+        width: 50%;
+    }
+    header .navber {
+        width: 100%;
+        display: none;
+    }
+    header label {
+        display: initial;
+    }
+    #menu-bar {
+        display: none;
+    }
+    #menu-bar:checked~.navber {
+        display: initial;
+    }
+    .side-menu-area .navber ul {
+        color: var(--white);
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .side-menu-area {
+        top: 45px;
+        width: 50%;
+    }
+    .side-menu-area .navber ul li a {
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+
+/* =========header responsive end ============ */
+
+
+/* ========== banner section start ==========  */
+
+@media only screen and (max-width: 768px) {
+    .banner-area {
+        padding: 0;
+    }
+    .banner-area .popular .banner-card {
+        height: 465px;
+    }
+    .banner-area .popular .banner-card .banner-content h2 {
+        font-size: 16px;
+    }
+    .banner-area .popular .banner-card .banner-content .banner-icon i {
+        font-size: 20px;
+    }
+    .banner-area .popular .banner-card .banner-content .banner-info h3 {
+        font-size: 15px;
+    }
+    .banner-area .popular .banner-card .banner-content .banner-info span {
+        font-size: 14px;
+    }
+    .banner-area .popular .banner-card .banner-content .mb-4 {
+        margin-bottom: 1rem!important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .banner-area {
+        padding: 0;
+        margin-top: 60px;
+    }
+    .banner-area .popular {
+        width: 100%;
+    }
+}
+
+
+/* =========== banner section end ===========  */
+
+
+/* =========== our-savings section start ===========  */
+
+@media only screen and (max-width: 425px) {
+    .our-savings-area .our-savings {
+        width: 100%;
+    }
+    .our-savings-area .our-savings-card {
+        padding: 25px;
+    }
+    .our-savings-area .our-savings-card a .our-savings-btn {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    .our-savings-area .our-savings-card ul li p {
+        font-size: 14px;
+    }
+    .our-savings-area .our-savings-card ul li span {
+        font-size: 14px;
+    }
+}
+
+
+/* =========== our-savings section end ============  */
+
+
+/* =========== get section start ===========  */
+
+@media only screen and (max-width: 768px) {
+    .get-area {
+        height: 300px;
+    }
+    .get-area .get-content {
+        padding-top: 10%;
+    }
+    .get-area .get-content h1 {
+        font-size: 38px;
+    }
+    .get-area .get-content p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .get-area {
+        height: 240px;
+    }
+    .get-area .get-content {
+        padding-top: 16%;
+    }
+    .get-area .get-content h1 {
+        font-size: 24px;
+    }
+    .get-area .get-content p {
+        font-size: 14px;
+    }
+    .get-area .search {
+        height: 35px;
+        width: 100%;
+    }
+    .get-area .search a {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .get-area .search input::placeholder {
+        font-size: 14px;
+    }
+}
+
+
+/* =========== get section end ===========  */
+
+
+/* ====== inspiration section start =======  */
+
+@media only screen and (max-width: 768px) {
+    .inspiration-area .inspiration-card .inspiration-content span {
+        font-size: 16px;
+    }
+    .inspiration-area .inspiration-card .inspiration-content h2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .inspiration-area .inspiration {
+        width: 100%;
+    }
+    .inspiration-header {
+        display: block;
+    }
+    .inspiration-header h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .inspiration-header span {
+        font-size: 14px;
+    }
+    .inspiration-area .inspiration-card .inspiration-content span {
+        font-size: 14px;
+    }
+}
+
+
+/* ====== inspiration section end ========  */
+
+
+/* ====== remunerative section start ======  */
+
+@media only screen and (max-width: 425px) {
+    .remunerative-area .remunerative .remunerative-header h2 {
+        font-size: 18px;
+    }
+    .remunerative-area .remunerative .remunerative-content ul {
+        display: block;
+    }
+    .remunerative-area .remunerative .remunerative-content ul li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .remunerative-area .remunerative .remunerative-header h2 {
+        font-size: 16px;
+    }
+}
+
+
+/* ====== remunerative section end ======  */
+
+
+/* ====== footer section start ===========  */
+
+@media only screen and (max-width: 768px) {
+    .footer-area .about-company h3 {
+        font-size: 22px;
+    }
+    .footer-area .footer-links h4 {
+        font-size: 20px;
+    }
+    .footer-area .footer-links ul li a {
+        font-size: 15px;
+    }
+    .footer-area .about-company .fotter-btn {
+        margin-bottom: 14px;
+    }
+    .footer-area .about-company p {
+        font-size: 15px;
+    }
+    .footer-area .about-company span {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .footer-area .about-company a .fotter-btn {
+        font-size: 14px;
+    }
+    .footer-area .footer-bottom .footer-icon a {
+        margin-right: 8px;
+    }
+    .footer-area .footer-bottom .footer-icon {
+        text-align: center;
+    }
+    .footer-area .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-area .footer-links ul li a {
+        margin-left: 7px;
+    }
+    .footer-area .footer-bottom .footer-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ========== footer section end =========  */
